@@ -1,0 +1,7 @@
+OK:
+Test 7
+
+övriga:
+
+Test 6 skriver rätt till alla register. Har inte kollat noga på branch prediction men tror att den inte prediktar något
+test 8 skriver rätt till alla register. Detta tyder på att branching med compressed funkar. Tror dock att prediction inte funkar

@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jun  3 13:50:41 2025
+# Process ID: 1314166
+# Current directory: /home/jonathan/Documents/Vivado_files/IC_project/riscv/scriptsForSim
+# Command line: vivado -mode batch -source launchProject.tcl
+# Log file: /home/jonathan/Documents/Vivado_files/IC_project/riscv/scriptsForSim/vivado.log
+# Journal file: /home/jonathan/Documents/Vivado_files/IC_project/riscv/scriptsForSim/vivado.jou
+# Running On        :jonathan-ThinkPad-E16-Gen-1
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.2 LTS
+# Processor Detail  :AMD Ryzen 7 7730U with Radeon Graphics
+# CPU Frequency     :2169.012 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :15521 MB
+# Swap memory       :4294 MB
+# Total Virtual     :19816 MB
+# Available Virtual :13966 MB
+#-----------------------------------------------------------
+source launchProject.tcl
+open_project /home/jonathan/Documents/Vivado_files/risc-v/risc-v.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+open_wave_config /home/jonathan/Documents/Vivado_files/risc-v/top_tb_behav.wcfg
+source top_tb.tcl
+close_sim

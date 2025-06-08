@@ -1,0 +1,976 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jun  3 13:20:59 2025
+# Process ID: 1301375
+# Current directory: /home/jonathan/Documents/Vivado_files/IC_project/riscv/scriptsForSim
+# Command line: vivado -mode batch -source launchProject.tcl
+# Log file: /home/jonathan/Documents/Vivado_files/IC_project/riscv/scriptsForSim/vivado.log
+# Journal file: /home/jonathan/Documents/Vivado_files/IC_project/riscv/scriptsForSim/vivado.jou
+# Running On        :jonathan-ThinkPad-E16-Gen-1
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.2 LTS
+# Processor Detail  :AMD Ryzen 7 7730U with Radeon Graphics
+# CPU Frequency     :400.000 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :15521 MB
+# Swap memory       :4294 MB
+# Total Virtual     :19816 MB
+# Available Virtual :13945 MB
+#-----------------------------------------------------------
+source launchProject.tcl
+# start_gui
+# open_project ../risc-v.xpr
+ERROR: [Coretcl 2-1982] Project file does not exist. Please provide a project file with .xpr extension. Provided: ../risc-v.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/jonathan/Documents/Vivado_files/risc-v/risc-v.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:07 . Memory (MB): peak = 7919.793 ; gain = 327.477 ; free physical = 5242 ; free virtual = 12478
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1
+  **** Build date : May 22 2024 at 19:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Apr 27 2024-03:40:49
+    **** Build number : 2024.1.1714182049
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274674760A
+set_property PROGRAM.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'cpu_unit/inst_mem/inst_ila_program_mem_0' at location 'uuid_64EBFA30EC515D01BA58949138314363' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers' at location 'uuid_6644DB33D80B5CF2BE99BBB6770CF724' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'cpu_unit/inst_mem_stage/inst_datamem_interface/inst_mem/inst_ila_data_mem' at location 'uuid_7084870E0EE452B69581147369739C09' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem_stage/inst_datamem_interface/inst_mem/inst_ila_data_mem"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:26:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:26:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-03 13:26:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2025-Jun-03 13:26:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem_stage/inst_datamem_interface/inst_mem/inst_ila_data_mem"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2025-Jun-03 13:27:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem_stage/inst_datamem_interface/inst_mem/inst_ila_data_mem"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem_stage/inst_datamem_interface/inst_mem/inst_ila_data_mem"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2025-Jun-03 13:27:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-03 13:27:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2025-Jun-03 13:27:13
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:27:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:27:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim/instruction_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/common.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/ALU_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/Decompression.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decompression
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/Forwarding_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/branch_evaluation_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_evaluation_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/instruction_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/datamem_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamem_interface
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/decode_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/execute_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/fetch_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/hazard_detection_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_detection_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/mem_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/program_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/register_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/uart_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sim_1/imports/simulation/testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'program_clear_ram' is not connected on this instance [/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sim_1/imports/simulation/testbench.sv:23]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/instruction_pkg.sv" Line 1. Module instruction_pkg has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/instruction_pkg.sv" Line 1. Module instruction_pkg has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/common.sv" Line 1. Module $unit_common_sv_1986849090 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/common.sv" Line 1. Module $unit_common_sv_1986849090 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sim_1/imports/simulation/testbench.sv" Line 4. Module testbench has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/cpu.sv" Line 6. Module cpu has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/program_memory.sv" Line 4. Module program_memory has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0/ila_program_mem_0_sim_netlist.v" Line 16. Module ila_program_mem_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0/ila_program_mem_0_sim_netlist.v" Line 10736. Module ila_program_mem_0_ila_v6_2_15_ila has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/GND.v" Line 24. Module GND has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/LUT1.v" Line 27. Module LUT1 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/LUT1.v" Line 62. Module x_lut1_mux2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0/ila_program_mem_0_sim_netlist.v" Line 10736. Module ila_program_mem_0_ila_v6_2_15_ila_core has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/GND.v" Line 24. Module GND has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.common
+Compiling package xil_defaultlib.instruction_pkg
+Compiling package xil_defaultlib.$unit_common_sv_1986849090
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.SRLC32E_default
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.SRLC16E_default
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.CFGLUT5_default
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.MUXF8
+Compiling module xil_defaultlib.ila_program_mem_0
+Compiling module xil_defaultlib.program_memory
+Compiling module xil_defaultlib.uart_decoder
+Compiling module xil_defaultlib.fetch_stage
+Compiling module xil_defaultlib.ila_registers
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.Decompression
+Compiling module xil_defaultlib.decode_stage
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.ALU_control
+Compiling module xil_defaultlib.execute_stage
+Compiling module xil_defaultlib.ila_data_mem
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.datamem_interface
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.hazard_detection_unit
+Compiling module xil_defaultlib.branch_evaluation_unit
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+execute_script: Time (s): cpu = 00:01:35 ; elapsed = 00:00:31 . Memory (MB): peak = 8234.203 ; gain = 0.000 ; free physical = 4697 ; free virtual = 12216
+INFO: [USF-XSim-69] 'elaborate' step finished in '31' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/home/jonathan/Documents/Vivado_files/risc-v/top_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/jonathan/Documents/Vivado_files/risc-v/top_tb_behav.wcfg
+WARNING: Simulation object /top_tb/clk was not found in the design.
+WARNING: Simulation object /top_tb/reset_n was not found in the design.
+WARNING: Simulation object /top_tb/io_rx was not found in the design.
+WARNING: Simulation object /top_tb/new_instruction_write_enable was not found in the design.
+WARNING: Simulation object /top_tb/RGB2_Red was not found in the design.
+WARNING: Simulation object /top_tb/RGB2_Green was not found in the design.
+WARNING: Simulation object /top_tb/RGB2_Blue was not found in the design.
+WARNING: Simulation object /top_tb/clear_ram was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/id_instruction was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/ex_instruction was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/mem_instruction was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/wb_instruction was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[0] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[1] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[2] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[3] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[4] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[5] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[6] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[7] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[8] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[9] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[10] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[11] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[12] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[13] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[14] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[15] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[16] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[17] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[18] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[19] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[20] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[21] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[22] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[23] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[24] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[25] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[26] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[27] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[28] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[29] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[30] was not found in the design.
+WARNING: Simulation object /top_tb/top/cpu_unit/inst_decode_stage/rf_inst/registers[31] was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:47 ; elapsed = 00:00:39 . Memory (MB): peak = 8246.613 ; gain = 12.410 ; free physical = 4711 ; free virtual = 12242
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim/instruction_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/common.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/ALU_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/Decompression.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decompression
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/Forwarding_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/branch_evaluation_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_evaluation_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/instruction_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/datamem_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamem_interface
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/decode_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/execute_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/fetch_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/hazard_detection_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_detection_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/mem_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/program_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/register_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/uart_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sim_1/imports/simulation/testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'program_clear_ram' is not connected on this instance [/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sim_1/imports/simulation/testbench.sv:23]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/instruction_pkg.sv" Line 1. Module instruction_pkg has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/instruction_pkg.sv" Line 1. Module instruction_pkg has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/common.sv" Line 1. Module $unit_common_sv_1986849090 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/common.sv" Line 1. Module $unit_common_sv_1986849090 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sim_1/imports/simulation/testbench.sv" Line 4. Module testbench has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/cpu.sv" Line 6. Module cpu has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/program_memory.sv" Line 4. Module program_memory has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0/ila_program_mem_0_sim_netlist.v" Line 16. Module ila_program_mem_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0/ila_program_mem_0_sim_netlist.v" Line 10736. Module ila_program_mem_0_ila_v6_2_15_ila has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/GND.v" Line 24. Module GND has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/LUT1.v" Line 27. Module LUT1 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/LUT1.v" Line 62. Module x_lut1_mux2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0/ila_program_mem_0_sim_netlist.v" Line 10736. Module ila_program_mem_0_ila_v6_2_15_ila_core has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/GND.v" Line 24. Module GND has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.common
+Compiling package xil_defaultlib.instruction_pkg
+Compiling package xil_defaultlib.$unit_common_sv_1986849090
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.SRLC32E_default
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.SRLC16E_default
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.CFGLUT5_default
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.MUXF8
+Compiling module xil_defaultlib.ila_program_mem_0
+Compiling module xil_defaultlib.program_memory
+Compiling module xil_defaultlib.uart_decoder
+Compiling module xil_defaultlib.fetch_stage
+Compiling module xil_defaultlib.ila_registers
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.Decompression
+Compiling module xil_defaultlib.decode_stage
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.ALU_control
+Compiling module xil_defaultlib.execute_stage
+Compiling module xil_defaultlib.ila_data_mem
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.datamem_interface
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.hazard_detection_unit
+Compiling module xil_defaultlib.branch_evaluation_unit
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+execute_script: Time (s): cpu = 00:01:32 ; elapsed = 00:00:30 . Memory (MB): peak = 8246.613 ; gain = 0.000 ; free physical = 4624 ; free virtual = 12155
+INFO: [USF-XSim-69] 'elaborate' step finished in '30' seconds
+launch_simulation: Time (s): cpu = 00:01:33 ; elapsed = 00:00:30 . Memory (MB): peak = 8246.613 ; gain = 0.000 ; free physical = 4624 ; free virtual = 12155
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:01:38 ; elapsed = 00:00:36 . Memory (MB): peak = 8246.613 ; gain = 0.000 ; free physical = 4608 ; free virtual = 12140
+set_property top top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'top_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim/instruction_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/common.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/ALU_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/Decompression.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decompression
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/Forwarding_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/branch_evaluation_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_evaluation_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/instruction_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/datamem_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamem_interface
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/decode_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/execute_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/fetch_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/hazard_detection_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_detection_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/mem_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/program_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/register_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/top_module.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/uart.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/uart_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sim_1/new/top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/instruction_pkg.sv" Line 1. Module instruction_pkg has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/instruction_pkg.sv" Line 1. Module instruction_pkg has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/common.sv" Line 1. Module $unit_common_sv_3331152659 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/common.sv" Line 1. Module $unit_common_sv_3331152659 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sim_1/new/top_tb.sv" Line 10. Module top_tb has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/top_module.sv" Line 23. Module top_module has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/cpu.sv" Line 6. Module cpu has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/program_memory.sv" Line 4. Module program_memory has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0/ila_program_mem_0_sim_netlist.v" Line 16. Module ila_program_mem_0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0/ila_program_mem_0_sim_netlist.v" Line 10736. Module ila_program_mem_0_ila_v6_2_15_ila has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/GND.v" Line 24. Module GND has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/LUT1.v" Line 27. Module LUT1 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/LUT1.v" Line 62. Module x_lut1_mux2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0/ila_program_mem_0_sim_netlist.v" Line 10736. Module ila_program_mem_0_ila_v6_2_15_ila_core has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/GND.v" Line 24. Module GND has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/proj/rdi/data/CLs/5074560/data/verilog/src/unisims/FDRE.v" Line 27. Module FDRE_default has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.common
+Compiling package xil_defaultlib.instruction_pkg
+Compiling package xil_defaultlib.$unit_common_sv_3331152659
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.SRLC32E_default
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.SRLC16E_default
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.CFGLUT5_default
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.MUXF8
+Compiling module xil_defaultlib.ila_program_mem_0
+Compiling module xil_defaultlib.program_memory
+Compiling module xil_defaultlib.uart_decoder
+Compiling module xil_defaultlib.fetch_stage
+Compiling module xil_defaultlib.ila_registers
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.Decompression
+Compiling module xil_defaultlib.decode_stage
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.ALU_control
+Compiling module xil_defaultlib.execute_stage
+Compiling module xil_defaultlib.ila_data_mem
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.datamem_interface
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.Forwarding_unit
+Compiling module xil_defaultlib.hazard_detection_unit
+Compiling module xil_defaultlib.branch_evaluation_unit
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.uart_default
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
+execute_script: Time (s): cpu = 00:01:31 ; elapsed = 00:00:29 . Memory (MB): peak = 8272.637 ; gain = 0.000 ; free physical = 4485 ; free virtual = 12063
+INFO: [USF-XSim-69] 'elaborate' step finished in '29' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -view {/home/jonathan/Documents/Vivado_files/risc-v/top_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/jonathan/Documents/Vivado_files/risc-v/top_tb_behav.wcfg
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:39 ; elapsed = 00:00:36 . Memory (MB): peak = 8350.598 ; gain = 77.961 ; free physical = 4506 ; free virtual = 12085
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:31:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:31:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:33:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:33:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:34:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:34:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:34:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:34:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:34:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:34:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:34:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:34:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:34:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:34:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:34:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:34:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:34:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:34:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:34:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:34:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:34:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:34:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:34:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:34:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:35:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:35:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jun-03 13:35:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jun-03 13:35:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210274674760A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'top_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim/instruction_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/common.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/ALU_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/Decompression.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decompression
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/Forwarding_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/branch_evaluation_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_evaluation_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/instruction_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/data_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/datamem_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamem_interface
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/decode_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/execute_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/fetch_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/hazard_detection_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_detection_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/mem_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/program_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/register_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/top_module.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/uart.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/new/uart_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sim_1/new/top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'id_if_reg' is not declared [/home/jonathan/Documents/Vivado_files/IC_project/riscv/risc-v.srcs/sources_1/imports/design/cpu.sv:90]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 8480.461 ; gain = 0.000 ; free physical = 4212 ; free virtual = 11925
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  3 13:50:21 2025...

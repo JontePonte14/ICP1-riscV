@@ -1,0 +1,78 @@
+Att lägga ihop "vanliga" instruktioner och compressed instruktioner från en binär
+fil är inte helt lätt. Så som program minnet "initial" program gör är att den 
+tar de lägre bitarna lägger dem första raden och sen de högra bitarna på den
+andra raden. Det kan vara ganska jobbigt att konvergera emellan det hela. 
+
+Nedan finns det ett exempel på binärkod exempel:
+1000110010010101
+00000000010000000000010100010011
+0000010100001010
+1000010100000101
+
+Men för lättare representera dem kan vi istället skriva C (compressed), H (högre 
+bitarna) och L (lägre bitarna) och en siffra efter för att lättare identifera liknade namn. 
+Nedan är binärkod exempelet igen 
+C1
+H2 L2
+C3
+C4
+
+Detta kan vara svårt för det är lite oklart hur man ska flytta runt dem.
+Nedan ska jag så gott som möjligt visa. 
+
+Men man får tänka på att instruktioner som ska åka in först i minnet måste 
+ligga till höger. Så i detta fall så flyttar man på 32 bitar instruktioner
+lägre bitar till vänster om den compressed instruktioner som är över den. 
+Så här:
+
+C1
+H2 L2
+C3
+C4
+
+--> 
+
+L2 C1
+H2
+C3
+C4
+
+Sedan vill ju att den vanliga instruktioner högre 16 bitar ska komma direkt efter
+i program minnet, så lägger vi den compressed instruktioner till vänster om den.
+
+Så här: 
+L2 C1
+H2
+C3
+C4
+
+-->
+
+L2 C1
+C3 H2
+C4
+
+Så nu var vi ju klara. Om man får C längst så ska det gå bra att skriva 16 st "x"
+alternativ "0" för att padda ut. 
+
+Det binära exemplet från ovan blir så här. 
+
+1000110010010101
+00000000010000000000010100010011
+0000010100001010
+1000010100000101
+
+-->
+
+00000101000100111000110010010101
+0000000001000000
+0000010100001010
+1000010100000101
+
+--> 
+
+00000101000100111000110010010101
+00000101000010100000000001000000
+1000010100000101
+
+Lycka till!

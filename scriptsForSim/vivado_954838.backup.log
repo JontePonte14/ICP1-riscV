@@ -1,0 +1,636 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed May 14 09:29:18 2025
+# Process ID: 954838
+# Current directory: /home/jonathan/Documents/Vivado_files/risc-v/scriptsForSim
+# Command line: vivado -mode batch -source launchProject.tcl
+# Log file: /home/jonathan/Documents/Vivado_files/risc-v/scriptsForSim/vivado.log
+# Journal file: /home/jonathan/Documents/Vivado_files/risc-v/scriptsForSim/vivado.jou
+# Running On        :jonathan-ThinkPad-E16-Gen-1
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.2 LTS
+# Processor Detail  :AMD Ryzen 7 7730U with Radeon Graphics
+# CPU Frequency     :3509.869 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :15521 MB
+# Swap memory       :4294 MB
+# Total Virtual     :19816 MB
+# Available Virtual :13427 MB
+#-----------------------------------------------------------
+source launchProject.tcl
+# start_gui
+# open_project ../risc-v.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 7892.203 ; gain = 385.441 ; free physical = 2406 ; free virtual = 11840
+# set_property top cpu [current_fileset]
+# set_property top testbench [get_filesets sim_1]
+# set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sources_1
+source ila_registers
+couldn't read file "ila_registers": no such file or directory
+source ila_registers.tcl
+# set ilaName_0 ila_registers
+# set nbrPort 64
+can't read "ilaName": no such variable
+    while executing
+"get_ips ${ilaName}"
+    invoked from within
+"set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName}]"
+    (file "ila_registers.tcl" line 10)
+source ila_registers.tcl
+# set ilaName_0 ila_registers
+# set nbrPort 64
+can't read "ilaName": no such variable
+    while executing
+"get_ips ${ilaName}"
+    invoked from within
+"set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName}]"
+    (file "ila_registers.tcl" line 10)
+source ila_registers.tcl
+# set ilaName ila_registers
+# set nbrPort 64
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName}]
+# for {set i 0} {$i < 32} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName}]
+# }
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_program_mem_0
+generate_target {instantiation_template} [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0/ila_program_mem_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_program_mem_0'...
+generate_target all [get_files  /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0/ila_program_mem_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_program_mem_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0/ila_program_mem_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_program_mem_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_program_mem_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_program_mem_0'...
+catch { config_ip_cache -export [get_ips -all ila_program_mem_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_program_mem_0
+export_ip_user_files -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0/ila_program_mem_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0/ila_program_mem_0.xci]
+launch_runs ila_program_mem_0_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_program_mem_0
+[Wed May 14 09:32:56 2025] Launched ila_program_mem_0_synth_1...
+Run output will be captured here: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/ila_program_mem_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0/ila_program_mem_0.xci] -directory /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/sim_scripts -ip_user_files_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files -ipstatic_source_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/modelsim} {questa=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/questa} {xcelium=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/xcelium} {vcs=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/vcs} {riviera=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_program_mem_1
+generate_target {instantiation_template} [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1/ila_program_mem_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_program_mem_1'...
+generate_target all [get_files  /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1/ila_program_mem_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_program_mem_1'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_1/ila_program_mem_1_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_program_mem_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_program_mem_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_program_mem_1'...
+catch { config_ip_cache -export [get_ips -all ila_program_mem_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_program_mem_1
+export_ip_user_files -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1/ila_program_mem_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1/ila_program_mem_1.xci]
+launch_runs ila_program_mem_1_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_program_mem_1
+[Wed May 14 09:33:15 2025] Launched ila_program_mem_1_synth_1...
+Run output will be captured here: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/ila_program_mem_1_synth_1/runme.log
+export_simulation -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1/ila_program_mem_1.xci] -directory /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/sim_scripts -ip_user_files_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files -ipstatic_source_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/modelsim} {questa=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/questa} {xcelium=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/xcelium} {vcs=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/vcs} {riviera=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_program_mem_2
+generate_target {instantiation_template} [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2/ila_program_mem_2.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_program_mem_2'...
+generate_target all [get_files  /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2/ila_program_mem_2.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_program_mem_2'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_2/ila_program_mem_2_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_program_mem_2'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_program_mem_2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_program_mem_2'...
+catch { config_ip_cache -export [get_ips -all ila_program_mem_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_program_mem_2
+export_ip_user_files -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2/ila_program_mem_2.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2/ila_program_mem_2.xci]
+launch_runs ila_program_mem_2_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_program_mem_2
+[Wed May 14 09:33:33 2025] Launched ila_program_mem_2_synth_1...
+Run output will be captured here: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/ila_program_mem_2_synth_1/runme.log
+export_simulation -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2/ila_program_mem_2.xci] -directory /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/sim_scripts -ip_user_files_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files -ipstatic_source_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/modelsim} {questa=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/questa} {xcelium=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/xcelium} {vcs=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/vcs} {riviera=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_program_mem_3
+generate_target {instantiation_template} [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3/ila_program_mem_3.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_program_mem_3'...
+generate_target all [get_files  /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3/ila_program_mem_3.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_program_mem_3'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_program_mem_3'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_program_mem_3'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_program_mem_3'...
+catch { config_ip_cache -export [get_ips -all ila_program_mem_3] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_program_mem_3
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 15d81ba8d471cb08 to dir: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_stub.v to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_sim_netlist.vhdl to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_stub.vhdl to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0.dcp to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_sim_netlist.v to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3/ila_program_mem_3_sim_netlist.v
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP ila_program_mem_3, cache-ID = 15d81ba8d471cb08; cache size = 6.269 MB.
+export_ip_user_files -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3/ila_program_mem_3.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3/ila_program_mem_3.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3/ila_program_mem_3.xci'
+export_simulation -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3/ila_program_mem_3.xci] -directory /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/sim_scripts -ip_user_files_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files -ipstatic_source_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/modelsim} {questa=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/questa} {xcelium=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/xcelium} {vcs=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/vcs} {riviera=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+source ila_program_mem.tcl
+# set ilaName_0 ila_program_mem_0
+# set ilaName_1 ila_program_mem_1
+# set ilaName_2 ila_program_mem_2
+# set ilaName_3 ila_program_mem_3
+# set ilaName_valid ila_program_mem_valid
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_0}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_1}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_2}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+# for {set j 0} {i < 4} {incr i} {
+#     for {set i 0} {$i < 64} {incr i} {
+#         set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ila_program_mem_${j}]
+#     }
+# }
+invalid bareword "i"
+in expression "i < 4";
+should be "$i" or "{i}" or "i(...)" or ...
+    (parsing expression "i < 4")
+    invoked from within
+"for {set j 0} {i < 4} {incr i} {
+    for {set i 0} {$i < 64} {incr i} {
+        set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE$..."
+    (file "ila_program_mem.tcl" line 20)
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_program_mem_valid
+generate_target {instantiation_template} [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_program_mem_valid'...
+generate_target all [get_files  /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_program_mem_valid'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_program_mem_valid'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_program_mem_valid'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_program_mem_valid'...
+catch { config_ip_cache -export [get_ips -all ila_program_mem_valid] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_program_mem_valid
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 15d81ba8d471cb08 to dir: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_stub.v to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_sim_netlist.vhdl to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_stub.vhdl to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0.dcp to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_sim_netlist.v to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid_sim_netlist.v
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP ila_program_mem_valid, cache-ID = 15d81ba8d471cb08; cache size = 6.269 MB.
+export_ip_user_files -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.xci'
+export_simulation -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.xci] -directory /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/sim_scripts -ip_user_files_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files -ipstatic_source_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/modelsim} {questa=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/questa} {xcelium=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/xcelium} {vcs=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/vcs} {riviera=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+source ila_program_mem.tcl
+# set ilaName_0 ila_program_mem_0
+# set ilaName_1 ila_program_mem_1
+# set ilaName_2 ila_program_mem_2
+# set ilaName_3 ila_program_mem_3
+# set ilaName_valid ila_program_mem_valid
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_0}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_1}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_2}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_0}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_1}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_2}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_3}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {1} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_valid}]
+# }
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+source ila_program_mem.tcl
+# set ilaName_0 ila_program_mem_0
+# set ilaName_1 ila_program_mem_1
+# set ilaName_2 ila_program_mem_2
+# set ilaName_3 ila_program_mem_3
+# set ilaName_valid ila_program_mem_valid
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_0}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_1}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_2}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {256}] [get_ips ${ilaName_valid}]
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_0}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_1}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_2}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_3}]
+# }
+# for {set i 0} {$i < 256} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {1} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_valid}]
+# }
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_data_mem_0
+generate_target {instantiation_template} [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0/ila_data_mem_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_data_mem_0'...
+generate_target all [get_files  /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0/ila_data_mem_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_data_mem_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_data_mem_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_data_mem_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_data_mem_0'...
+catch { config_ip_cache -export [get_ips -all ila_data_mem_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_data_mem_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 15d81ba8d471cb08 to dir: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_stub.v to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_sim_netlist.vhdl to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_stub.vhdl to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0.dcp to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/ip/2024.1/1/5/15d81ba8d471cb08/ila_program_mem_0_sim_netlist.v to /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0/ila_data_mem_0_sim_netlist.v
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP ila_data_mem_0, cache-ID = 15d81ba8d471cb08; cache size = 6.269 MB.
+export_ip_user_files -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0/ila_data_mem_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0/ila_data_mem_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0/ila_data_mem_0.xci'
+export_simulation -of_objects [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0/ila_data_mem_0.xci] -directory /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/sim_scripts -ip_user_files_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files -ipstatic_source_dir /home/jonathan/Documents/Vivado_files/risc-v/risc-v.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/modelsim} {questa=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/questa} {xcelium=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/xcelium} {vcs=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/vcs} {riviera=/home/jonathan/Documents/Vivado_files/risc-v/risc-v.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_data_mem_1
+/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_1/ila_data_mem_1.xci
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_data_mem_2
+/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_2/ila_data_mem_2.xci
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_data_mem_3
+/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_3/ila_data_mem_3.xci
+update_compile_order -fileset sources_1
+source ila_data_mem.tcl
+# set ilaName_0 ila_data_mem_0
+# set ilaName_1 ila_data_mem_1
+# set ilaName_2 ila_data_mem_2
+# set ilaName_3 ila_data_mem_3
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_0}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_1}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_2}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {256}] [get_ips ${ilaName_valid}]
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_0}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_1}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_2}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_3}]
+# }
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+source ila_data_mem.tcl
+# set ilaName_0 ila_data_mem_0
+# set ilaName_1 ila_data_mem_1
+# set ilaName_2 ila_data_mem_2
+# set ilaName_3 ila_data_mem_3
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_0}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_1}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_2}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_0}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_1}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_2}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_3}]
+# }
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0/ila_data_mem_0.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_1/ila_data_mem_1.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_2/ila_data_mem_2.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_3/ila_data_mem_3.xci] -no_script -reset -force -quiet
+remove_files  {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0/ila_data_mem_0.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_1/ila_data_mem_1.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_2/ila_data_mem_2.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_3/ila_data_mem_3.xci}
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_1
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_1 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_2
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_2 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_3
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_3
+source ila_data_mem.tcl
+# set ilaName_0 ila_data_mem_0
+# set ilaName_1 ila_data_mem_1
+# set ilaName_2 ila_data_mem_2
+# set ilaName_3 ila_data_mem_3
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_0}
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_1}
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_2}
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_3}
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_0}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_1}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_2}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_0}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_1}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_2}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_3}]
+# }
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3/ila_program_mem_3.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.xci] -no_script -reset -force -quiet
+remove_files  {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3/ila_program_mem_3.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.xci}
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1/ila_program_mem_1.xci] -no_script -reset -force -quiet
+remove_files  -fileset ila_program_mem_1 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1/ila_program_mem_1.xci
+INFO: [Project 1-386] Moving file '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1/ila_program_mem_1.xci' from fileset 'ila_program_mem_1' to fileset 'sources_1'.
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_1
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2/ila_program_mem_2.xci] -no_script -reset -force -quiet
+remove_files  -fileset ila_program_mem_2 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2/ila_program_mem_2.xci
+INFO: [Project 1-386] Moving file '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2/ila_program_mem_2.xci' from fileset 'ila_program_mem_2' to fileset 'sources_1'.
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_2
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0/ila_program_mem_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset ila_program_mem_0 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0/ila_program_mem_0.xci
+INFO: [Project 1-386] Moving file '/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0/ila_program_mem_0.xci' from fileset 'ila_program_mem_0' to fileset 'sources_1'.
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0
+source ila_program_mem.tcl
+# set ilaName_0 ila_program_mem_0
+# set ilaName_1 ila_program_mem_1
+# set ilaName_2 ila_program_mem_2
+# set ilaName_3 ila_program_mem_3
+# set ilaName_valid ila_program_mem_valid
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_0}
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_1}
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_2}
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_3}
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_valid}
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_0}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_1}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_2}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {256}] [get_ips ${ilaName_valid}]
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_0}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_1}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_2}]
+# }
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_3}]
+# }
+# for {set i 0} {$i < 256} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {1} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_valid}]
+# }
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_registers/ila_registers.xci] -no_script -reset -force -quiet
+remove_files  /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_registers/ila_registers.xci
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_registers
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_registers
+source bht_create_ila_ports.tcl
+# set ilaName ila_bht
+# set nbrPort 64
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName}
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName}]
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {2} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName}]
+# }
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+source btb_create_ila_ports.tcl
+# set ilaName ila_btb
+# set nbrPort 64
+# create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName}
+# set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName}]
+# for {set i 0} {$i < 64} {incr i} {
+#     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName}]
+# }
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_bht/ila_bht.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_btb/ila_btb.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0/ila_data_mem_0.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_1/ila_data_mem_1.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_2/ila_data_mem_2.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_3/ila_data_mem_3.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0/ila_program_mem_0.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1/ila_program_mem_1.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2/ila_program_mem_2.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3/ila_program_mem_3.xci] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.xci] -no_script -reset -force -quiet
+remove_files  {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_bht/ila_bht.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_btb/ila_btb.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0/ila_data_mem_0.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_1/ila_data_mem_1.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_2/ila_data_mem_2.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_3/ila_data_mem_3.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0/ila_program_mem_0.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1/ila_program_mem_1.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2/ila_program_mem_2.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3/ila_program_mem_3.xci /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid/ila_program_mem_valid.xci}
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_bht
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_bht /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_btb
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_btb /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_0
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_0 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_1
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_1 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_2
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_2 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_data_mem_3
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_data_mem_3 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_0
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_0 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_1
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_1 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_2
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_2 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_3
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_3 /home/jonathan/Documents/Vivado_files/risc-v/risc-v.srcs/sources_1/ip/ila_program_mem_valid
+file delete -force /home/jonathan/Documents/Vivado_files/risc-v/risc-v.gen/sources_1/ip/ila_program_mem_valid
+source ila_all.tcl
+# source ila_registers.tcl
+## set ilaName ila_registers
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName}
+## set nbrPort 64
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName}]
+## for {set i 0} {$i < 32} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName}]
+## }
+# source ila_program_mem.tcl
+## set ilaName_0 ila_program_mem_0
+## set ilaName_1 ila_program_mem_1
+## set ilaName_2 ila_program_mem_2
+## set ilaName_3 ila_program_mem_3
+## set ilaName_valid ila_program_mem_valid
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_0}
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_1}
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_2}
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_3}
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_valid}
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_0}]
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_1}]
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_2}]
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {256}] [get_ips ${ilaName_valid}]
+## for {set i 0} {$i < 64} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_0}]
+## }
+## for {set i 0} {$i < 64} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_1}]
+## }
+## for {set i 0} {$i < 64} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_2}]
+## }
+## for {set i 0} {$i < 64} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_3}]
+## }
+## for {set i 0} {$i < 256} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {1} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_valid}]
+## }
+# source ila_data_mem.tcl
+## set ilaName_0 ila_data_mem_0
+## set ilaName_1 ila_data_mem_1
+## set ilaName_2 ila_data_mem_2
+## set ilaName_3 ila_data_mem_3
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_0}
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_1}
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_2}
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName_3}
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_0}]
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_1}]
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_2}]
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName_3}]
+## for {set i 0} {$i < 64} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_0}]
+## }
+## for {set i 0} {$i < 64} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_1}]
+## }
+## for {set i 0} {$i < 64} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_2}]
+## }
+## for {set i 0} {$i < 64} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName_3}]
+## }
+# source bht_create_ila_ports.tcl
+## set ilaName ila_bht
+## set nbrPort 64
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName}
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName}]
+## for {set i 0} {$i < 64} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {2} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName}]
+## }
+# source btb_create_ila_ports.tcl
+## set ilaName ila_btb
+## set nbrPort 64
+## create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ${ilaName}
+## set_property -dict [list CONFIG.C_NUM_OF_PROBES {64}] [get_ips ${ilaName}]
+## for {set i 0} {$i < 64} {incr i} {
+##     set_property -dict [list CONFIG.C_PROBE${i}_WIDTH {32} CONFIG.C_PROBE${i}_TYPE {DATA}] [get_ips ${ilaName}]
+## }
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget

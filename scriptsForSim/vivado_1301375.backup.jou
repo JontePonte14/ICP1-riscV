@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jun  3 13:20:59 2025
+# Process ID: 1301375
+# Current directory: /home/jonathan/Documents/Vivado_files/IC_project/riscv/scriptsForSim
+# Command line: vivado -mode batch -source launchProject.tcl
+# Log file: /home/jonathan/Documents/Vivado_files/IC_project/riscv/scriptsForSim/vivado.log
+# Journal file: /home/jonathan/Documents/Vivado_files/IC_project/riscv/scriptsForSim/vivado.jou
+# Running On        :jonathan-ThinkPad-E16-Gen-1
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.2 LTS
+# Processor Detail  :AMD Ryzen 7 7730U with Radeon Graphics
+# CPU Frequency     :400.000 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :15521 MB
+# Swap memory       :4294 MB
+# Total Virtual     :19816 MB
+# Available Virtual :13945 MB
+#-----------------------------------------------------------
+source launchProject.tcl
+open_project /home/jonathan/Documents/Vivado_files/risc-v/risc-v.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/jonathan/Documents/Vivado_files/risc-v/risc-v.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem_stage/inst_datamem_interface/inst_mem/inst_ila_data_mem"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem_stage/inst_datamem_interface/inst_mem/inst_ila_data_mem"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem_stage/inst_datamem_interface/inst_mem/inst_ila_data_mem"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem_stage/inst_datamem_interface/inst_mem/inst_ila_data_mem"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_mem/inst_ila_program_mem_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+launch_simulation
+open_wave_config /home/jonathan/Documents/Vivado_files/risc-v/top_tb_behav.wcfg
+source testbench.tcl
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config /home/jonathan/Documents/Vivado_files/risc-v/top_tb_behav.wcfg
+source top_tb.tcl
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"cpu_unit/inst_decode_stage/rf_inst/inst_ila_registers"}]]
+close_sim
+launch_simulation
+close_sim
